@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+@font-face {
+	font-family: 'Miso Bold';
+	src: url('../fonts/miso-bold-webfont.woff2') format('woff2'),
+	url('../fonts/miso-bold-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Miso';
+	src: url('../fonts/miso-regular-webfont.woff2') format('woff2'),
+	url('../fonts/miso-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	font: 300 20px/1.3 'Lato', sans-serif;
+	color:  #333333;
+	background-color: #fdde7e;
+}
+
+/* Layout */
+.ba-container{
+	padding: 50px 30px 0;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-flex-grid {
+	display: flex;
+	margin-left: -30px;
+	align-items: center;
+	justify-content: center;
+}
+
+.ba-item {
+	flex-basis: 360px;
+	padding-left: 30px;
+}
+
+
+.ba-order {
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 42px 0 32px;
+}
+
+.ba-order__price {
+	margin: 0 0 20px 0;
+	font: 700 70px/1.2 'Miso Bold', sans-serif;
+	color:  #02995b;
+}
+
+.ba-order__info {
+	text-align: center;
+	max-width: 160px;
+	padding-top: 25px;
+}
+
+.ba-order__info h2 {
+	margin: 0;
+	font: 400 56px/1.2 'Miso', sans-serif;
+	margin-bottom: 30px;
+}
+
+.ba-order__info p {
+	margin: 0;
+}
+
+.ba-order__link img {
+	display: block;
+}
+
+.ba-order--middle {
+	padding: 52px 0 42px;
+}
+
+.ba-order--middle .ba-order__price {
+	margin-bottom: 30px;
+}
+
+.ba-order--middle .ba-order__info {
+	padding-top: 35px;
+}
